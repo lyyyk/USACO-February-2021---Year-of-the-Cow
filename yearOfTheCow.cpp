@@ -6,8 +6,8 @@ using namespace std;
 
 int main() {
   int n;
-  //cin >> n;
 
+  //map of animal names and years
   map<string,int> years;
   years.insert({"Ox", 1});
   years.insert({"Tiger", 2});
@@ -52,9 +52,7 @@ int main() {
 
     animals.insert({name,animal});
 
-    //mildred prev dragon Bessie -9
-    //gretta prev monkey mildred 
-    //paulina next dog bessie 9
+    
     if(prevOrNext == "previous") {
       if(years[animals[comparison]] > years[animal]) {
         diff = differences[comparison] - (years[animals[comparison]]-years[animal]);
@@ -77,3 +75,9 @@ int main() {
   //code for finding difference between bessie and elsie
   cout << differences["Elsie"];
 } 
+
+
+//test cases
+//mildred prev dragon Bessie -9
+//gretta prev monkey mildred 
+//paulina next dog bessie 9
