@@ -28,6 +28,7 @@ int main() {
   animals.insert({"Bessie", "Ox"});
 
   string line;
+  
   while(getline(cin, line)) {
     vector<string> vec;
     string temp = "";
