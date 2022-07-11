@@ -7,7 +7,7 @@ using namespace std;
 int main() {
   int n;
 
-  //map of animal names and years
+  //map with animal names and years
   map<string,int> years;
   years.insert({"Ox", 1});
   years.insert({"Tiger", 2});
